@@ -1,0 +1,36 @@
+<div *ngIf="recipe" class="recipe-edit-container">
+  <h2>Edit Recipe</h2>
+  <form>
+    <div>
+      <label>ID:</label>
+      <input type="text" readonly [value]="recipe.id">
+    </div>
+    <div>
+      <label>Title:</label>
+      <input type="text" [(ngModel)]="recipe.title" required>
+    </div>
+    <div>
+      <label>Cuisine:</label>
+      <select [(ngModel)]="recipe.cuisine" required>
+        <option *ngFor="let cuisine of cuisines | async" [value]="cuisine">{{ cuisine }}</option> <!-- Change cuisines$ to cuisines -->
+      </select>
+    </div>
+    <div>
+      <label>Description:</label>
+      <textarea [(ngModel)]="recipe.description"></textarea>
+    </div>
+    <div>
+      <label>Instructions:</label>
+      <textarea [(ngModel)]="recipe.instructions" required></textarea>
+    </div>
+    <div>
+      <label>Time:</label>
+      <input type="number" [(ngModel)]="recipe.time" required>
+    </div>
+    <div>
+      <label>Servings:</label>
+      <input type="number" [(ngModel)]="recipe.servings">
+    </div>
+    <button type="button" (click)="saveRecipe()">Save</button>
+  </form>
+</div>

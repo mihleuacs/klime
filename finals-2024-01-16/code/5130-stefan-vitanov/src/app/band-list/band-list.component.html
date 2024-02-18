@@ -1,0 +1,6 @@
+<div *ngFor="let band of bands">
+  <app-band [band]="band"></app-band>
+</div>
+<div>
+  <a [routerLink]="'/bands/create'">Edit</a>
+</div>

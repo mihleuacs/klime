@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Movies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>List of Movies</h1>
+    <div id="filters" class="filter">
+      <label for="title">Title:</label>
+      <input type="text" id="title-filter">
+
+      <label for="genre">Genre:</label>
+      <select id="genre-filter">
+        <option value="all" selected>All</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="sci-fi">Sci-Fi</option>
+      </select>
+
+      <label for="year">Year:</label>
+      <input type="number" id="year-filter">
+
+      <button id="apply-filter">Apply Filter</button>
+    </div>
+  </header>
+
+  <table id="movie-table">
+    <thead>
+      <tr>
+        <th data-sort="id">ID <span id="sort-id">sort</span></th>
+        <th data-sort="title">Title <span id="sort-title">sort</span></th>
+        <th data-sort="director">Director <span id="sort-director">sort</span></th>
+        <th data-sort="genre">Genre <span id="sort-genre">sort</span></th>
+        <th data-sort="year">Year <span id="sort-year">sort</span></th>
+        <th data-sort="rating">Rating <span id="sort-rating">sort</span></th>
+      </tr>
+    </thead>
+    <tbody id="movie-container">
+      
+    </tbody>
+  </table>
+
+  <div id="movie-details" class="modal hidden">
+    <div id="movie-details-content">
+      <div id="movie-details-header">
+        <h2>Movie Details</h2>
+      </div>
+      <ul id="movie-details-list">
+        
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

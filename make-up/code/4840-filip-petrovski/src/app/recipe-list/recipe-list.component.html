@@ -1,0 +1,16 @@
+<div *ngIf="recipes.length > 0; else noRecipes">
+    <h2>Recipes</h2>
+    <ul>
+      <li *ngFor="let recipe of recipes">
+        <h3>{{ recipe.title }}</h3>
+        <p>{{ recipe.description }}</p>
+        <button (click)="viewRecipe(recipe.id)">View</button>
+        <button (click)="editRecipe(recipe.id)">Edit</button>
+        <button (click)="deleteRecipe(recipe.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  
+  <ng-template #noRecipes>
+    <p>No recipes available.</p>
+  </ng-template>

@@ -1,0 +1,20 @@
+.statistics-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.statistics-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.statistics-container p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.statistics-container div {
+  margin-top: 10px;
+}

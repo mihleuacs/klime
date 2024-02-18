@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MidTerm Exam for Internet Programming</title>
+ 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="filters">
+      <input type="text" id="filter-title" placeholder="Filter by title...">
+      <input type="number" id="filter-year" placeholder="Filter by year...">
+      <select id="filter-genre">
+        <option value="">Select Genre</option>
+      </select>
+      <select id="filter-oscars">
+        <option value="">Select Oscar</option>
+      </select>
+      <button id="search-button">Search</button>
+    </div>
+    <h1>Movies Information</h1>
+    <div class="movie-header-table">
+      <div class="movie-header" data-field="id">ID</div>
+      <div class="movie-header" data-field="title">Title</div>
+      <div class="movie-header" data-field="director">Director</div>
+      <div class="movie-header" data-field="year">Year</div>
+      <div class="movie-header" data-field="genre">Genre</div>
+      <div class="movie-header" data-field="plot">Plot</div>
+      <div class="movie-header" data-field="cast">Cast</div>
+      <div class="movie-header" data-field="oscars">Oscars</div>
+    </div>
+    <div id="movie-container">
+      <div class="movie-table">
+ 
+      </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>

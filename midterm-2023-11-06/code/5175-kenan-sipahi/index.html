@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MidTerm Exam for Internet Programming</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bands Information</h1>
+    <div id="filter" class="filter">
+        
+      <label for="name">Search name: </label>
+      <input type="text" id="name-filter" />
+      <br>
+      <br>
+      <label for="genre">Genre: </label>
+      <select id="genre-filter">
+          <option value="all" selected>All</option>
+      </select>
+
+      <label for="country">Country: </label>
+      <select id="country-filter">
+          <option value="all" selected>All</option>
+      </select>
+      <button id="apply-filter">Apply Filter</button>
+  </div>
+  <br>
+    <div class="band-header-table">
+      <div class="band-header">ID<button id="sort-id">sort</button></div>
+      <div class="band-header">Name<button id="sort-name">sort</button></div>
+      <div class="band-header">Genre<button id="sort-genre">sort</button></div>
+      <div class="band-header">Formed<button id="sort-formed">sort</button></div>
+      <div class="band-header">Location<button id="sort-location">sort</button></div>
+      <div class="band-header">Country<button id="sort-country">sort</button></div>
+      <div class="band-header">Members</div>
+      <div class="band-header">Albums<button id="sort-albums">sort</button></div>
+    </div>
+    <div id="band-container">
+      <div class="band-table">
+        <div class="band-data">51</div>
+        <div class="band-data">Disturbed</div>
+        <div class="band-data">1996</div>
+        <div class="band-data">Chicago, Illinois, USA</div>
+        <div class="band-data">USA</div>
+        <div class="band-data">
+          David Draiman, Dan Donegan, John Moyer, Mike Wengren
+        </div>
+        <div class="band-data">7</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

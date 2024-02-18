@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MidTerm Exam for Internet Programming</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bands Information</h1>
+
+    <!-- Filter options -->
+    <input type="text" id="nameFilter" placeholder="Filter by Name">
+    <select id="countryFilter">
+        <option value="">Filter by Country</option>
+        
+    </select>
+    <select id="genreFilter">
+        <option value="">Filter by Genre</option>
+       
+    </select>
+    <input type="number" id="yearsActiveFilter" placeholder="Filter by Years Active">
+
+   
+    <div class="band-header-table">
+        <div class="band-header" data-sort="id">ID</div>
+        <div class="band-header" data-sort="name">Name</div>
+        <div class="band-header" data-sort="formed">Formed</div>
+        <div class="band-header" data-sort="location">Location</div>
+        <div class="band-header" data-sort="country">Country</div>
+        <div class="band-header" data-sort="members">Members</div>
+        <div class="band-header" data-sort="albums">Albums</div>
+    </div>
+    <div id="band-container">
+       
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
